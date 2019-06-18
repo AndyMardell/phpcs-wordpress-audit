@@ -14,6 +14,7 @@ This ruleset is a modified version of WPCS/WordPress-Extra
 You should have `composer` and `phpcs` installed. In a nutshell:
 
 `brew install composer`
+
 `composer global require "squizlabs/php_codesniffer=*"`
 
 ## Installation
