@@ -11,11 +11,13 @@ This ruleset is a modified version of WPCS/WordPress-Extra
 
 ## Prerequisites
 
-You should have `composer` and `phpcs` installed. In a nutshell:
+You should have `composer`, `phpcs` and `wpcs` installed. In a nutshell:
 
 `brew install composer`
 
 `composer global require "squizlabs/php_codesniffer=*"`
+
+`composer global require "wp-coding-standards/wpcs"`
 
 ## Installation
 
