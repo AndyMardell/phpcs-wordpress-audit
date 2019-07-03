@@ -28,5 +28,3 @@ To use this ruleset you must clone it, and then reference the path.
 ## Usage
 
 `phpcs --standard=phpcs-wordpress-audit/ruleset.xml /my_project/wp-content/themes/my_theme`
-
-

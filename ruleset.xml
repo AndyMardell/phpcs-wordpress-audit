@@ -3,8 +3,22 @@
 
 	<description>Si digital: WordPress Audit</description>
 
-	<!-- WordPress Core has strict formatting, but turn this on if you want to follow the guidlines -->
-	<!-- <rule ref="WordPress-Core"/> -->
+	<!-- You might want to ignore js/css -->
+	<exclude-pattern>*/dist/*</exclude-pattern>
+	<exclude-pattern>*.js</exclude-pattern>
+	<exclude-pattern>*.css</exclude-pattern>
+
+	<rule ref="WordPress-Core">
+		<exclude name="WordPress.Arrays.MultipleStatementAlignment" />
+		<exclude name="Generic.WhiteSpace.DisallowSpaceIndent" />
+		<exclude name="Generic.WhiteSpace.ScopeIndent" />
+		<exclude name="WordPress.WhiteSpace.ControlStructureSpacing" />
+		<exclude name="Squiz.ControlStructures.ControlSignature" />
+		<exclude name="WordPress.WhiteSpace.PrecisionAlignment" />
+		<exclude name="Squiz.WhiteSpace.SuperfluousWhitespace" />
+		<exclude name="WordPress.WhiteSpace.DisallowInlineTabs" />
+		<exclude name="PEAR.Functions.FunctionCallSignature" />
+	</rule>
 
 	<!-- Generic PHP best practices.
 		 https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/pull/382 -->
